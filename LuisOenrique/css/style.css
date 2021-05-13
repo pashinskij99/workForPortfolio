@@ -1,0 +1,601 @@
+body {
+	padding: 0;
+   margin: 0;
+   font-family: 'Asap', sans-serif;
+	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+}
+
+div, p, input, header, a, form {
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+h1{
+	font-family: 'Asap', sans-serif;
+	font-weight: 500;
+	font-size: 90px;
+	letter-spacing: 0.0001em;
+	color: #4d4d4d;
+	margin-bottom: 20px;
+	line-height: 0.7em;
+}
+h2 {
+	font-family: 'Asap', sans-serif;
+	font-weight: 500;
+	font-size: 46px;	
+	color: #717171;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	line-height: 1.1em;
+}
+h3 {
+	font-family: 'Asap', sans-serif;
+	font-weight: 500;
+	font-size: 30px;
+	color: #373737;
+	text-transform: uppercase;
+}
+
+ul,li {
+   list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.df {
+	display: flex;
+}
+
+.paddbot {
+	padding-bottom: 70px;
+}
+
+.container {
+	width: 1180px;
+   margin: 0 auto;	
+   position: relative;
+}
+
+.header {
+	background: url(../img/bgelement.jpg)no-repeat top center / cover;
+	height: 750px;
+}
+.header-top {
+	padding-top: 30px;
+	display: flex;
+}
+.header-logo {
+	width: 85px;
+	text-align: center;
+}
+.logo {}
+.logo-text {
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	color: #1e1e1e;
+	line-height: 0.85em;
+	text-transform: uppercase;
+}
+.logo-minitext {
+	font-family: 'Lato', sans-serif;
+	font-size: 4px;
+	font-weight: 400;
+	color: #1e1e1e;
+}
+.header-menu {
+	margin-left: auto;
+}
+.menu {
+	display: flex;
+	justify-content: space-between;
+	width: 500px;
+}
+.menu-item {
+	font-family: 'Asap', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+}
+.menu-item-link {
+	color: #4d4d4d;
+}
+.menu-item-active {
+	border-bottom: 2px solid #878787;
+	font-weight: 300;
+	text-transform: none;
+}
+.header-medium {
+	margin-top: 170px;
+}
+.header-medium-text {
+	font-family: 'Asap', sans-serif;
+	font-weight: 500;
+	font-size: 22px;
+	color: #909090;	
+}
+.header-medium-btn{
+	display: flex;
+	width: 350px;
+	justify-content: space-between;
+}
+.header-medium-first-btn {
+	font-family: 'Asap', sans-serif;
+	font-weight: 500;
+	font-size: 16px;	
+	background: #e1e1e1;
+	color: #4d4d4d;
+	text-transform: uppercase;
+	border: 1px solid #4d4d4d;
+	width: 165px;
+	padding: 18px 0px;
+	text-align: center;
+	display: block;
+	transition: all 0.3s ease;
+}
+.header-medium-first-btn-active {
+	background: #ffffff;
+	color: #4d4d4d;
+	text-transform: uppercase;
+	border: none;
+	width: 165px;
+	padding: 17px 0px;
+	text-align: center;
+	display: block;
+	box-shadow: 0px 5px 65px -25px #000000;
+}
+.header-medium-second-btn {
+	font-family: 'Asap', sans-serif;
+	font-weight: 500;
+	font-size: 16px;	
+	color: #4d4d4d;
+	text-transform: uppercase;
+	border: 1px solid #4d4d4d;
+	width: 165px;
+	padding: 17px 0px;
+	text-align: center;
+	display: block;
+	transition: all 0.3s ease;
+}
+.header-medium-second-btn:hover{
+	background: #4d4d4d;
+	color: #ffffff;
+	border: 1px solid #4d4d4d;
+}
+.header-man {
+	position: absolute;
+	right: 0px;
+	top: 100px;
+}
+.header-man-img {
+}
+/*Modal*/
+.modal {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	display:none;
+	opacity: 1;
+	margin: 0 auto;
+	z-index: 1;
+}
+.modal-btn-close {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	color: #fff;
+	font-size: 30px;
+	cursor: pointer;
+	transition: 0.1s;
+}
+.modal-btn-close:hover {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.say-hallo-form-modal {
+	padding: 30px 20px;
+	width: 800px;
+	background: url(../img/contactbg.jpg) no-repeat center / cover;
+	position: relative;
+	top: 50px;
+	box-shadow: 0px 2px 88px 500px rgba(0,0,0,0.63);
+	-webkit-box-shadow: 0px 2px 88px 500px rgba(0,0,0,0.63);
+	-moz-box-shadow: 0px 2px 88px 500px rgba(0,0,0,0.63);
+}
+.say-hallo-h2-modal {
+	text-align: center;
+	color: #fff;
+	margin-bottom: 30px;
+}
+.say-hallo-name-email-modal {
+}
+
+.say-hallo-name-modal {
+}
+
+.say-hallo-email-modal {
+}
+
+.say-hallo-message-modal {
+}
+
+.say-hallo-btn-modal {
+	top: 400px;
+	cursor: pointer;
+}
+/*END Modal*/
+.about-me {
+	margin-top: 170px;
+	position: relative;
+	height: 500px;
+}
+.container {
+}
+.about-me-text {
+}
+.about-me-hr {
+	width: 53px;
+	height: 4px;
+	background: #7a7a7a;
+	border: none;
+	margin-left: 4px;
+}
+.about-me-h2 {
+	width: 320px;
+}
+.about-me-description {
+	font-family: 'Asap', sans-serif;
+	font-weight: 400;
+	font-size: 16px;	
+	color: #4d4d4d;
+	width: 470px;
+	line-height: 1.6em;
+	margin: 0;
+	margin-bottom: 35px;
+}
+.about-me-btn {
+	width: 240px;
+	padding: 18px 0px;
+}
+
+.about-me-img {
+	margin-left: auto;
+	position: absolute;
+	top: -70px;
+	right: 0;
+}
+
+.services {
+	background: #f6f6f6;
+	padding-top: 115px;
+	height: 600px;
+}
+.services-name {
+	margin-bottom: 80px;
+}
+.services-hr{
+	width: 53px;
+	height: 4px;
+	background: #7a7a7a;
+	border: none;
+}
+.services-h2 {
+	text-align: center;
+}
+.services-views {
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 990px;
+	margin: 0 auto;
+}
+.services-item {
+	text-align: center;
+	width: 210px;
+}
+.services-text {
+}
+
+.my-skills {
+	margin-top: 110px;
+	height: 600px;
+}
+.my-skills-text {
+	text-align: center;
+	margin-bottom: 45px;
+}
+.my-skills-hr {
+
+}
+.my-skills-stat {
+}
+.my-skills-board {
+	width: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+.portfolio {
+	background: #f6f6f6;
+	height: 900px;
+}
+.portfolio-text {
+	padding-top: 110px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.portfolio-hr {
+}
+.portfolio-menu {
+	padding-bottom: 20px;
+}
+.portfolio-item {
+	width: 330px;
+	transition: all 0.2s ease;
+}
+.portfolio-item:hover{
+	-moz-transform: scale(1.1);
+   -webkit-transform: scale(1.1);
+   -o-transform: scale(1.1);
+   -ms-transform: scale(1.1);
+   transform: scale(1.1);
+}
+.portfolio-item-img {
+	width: 300px;
+}
+.portfolio-btn {
+	font-family: 'Asap', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.testimonials {
+
+}
+.container {
+}
+.testimonials-text {
+	margin-top: 110px;
+}
+.testimonials_hr {
+}
+.testimonials-h2 {
+	text-align: center;
+}
+.testimonials-slyder {
+	display: flex;
+}
+.testimonials-item {
+	border: 1px solid #212121;
+	width: 700px;
+	height: 200px;
+	padding: 60px 80px;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+.testimonials-item-img {
+}
+.testimonials-item-img img {
+	width: 150px;
+	height: 150px;
+	display: block;
+}
+.testimonials-offer {
+	margin-left: 30px;
+}
+.testimonials-offer-small-text {
+	font-family: 'Asap', sans-serif;
+	font-weight: 500;
+	font-style: italic;
+	font-size: 12px;
+	color: #373737;
+	text-transform: uppercase;
+}
+.testimonials-offer-text {
+	font-family: 'Asap', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #7a7a7a;
+	text-transform: uppercase;
+	margin: 0;
+	margin-top: 8px;
+	line-height: 1.6em;
+}
+.testimonials-item-active {
+	display: flex;
+}
+.testimonials-dots {
+	position: absolute;
+	width: 60px;
+	display: flex;
+	justify-content: space-between;
+	left: 550px;
+	top: 385px;
+}
+.fade {  /*css animations*/
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@keyframes fade{ /*css animations*/
+	from{
+		opacity: 0.1;;
+	}
+	to{
+		opacity: 1;
+	}
+}
+.testimonials-dot {
+	width: 15px;
+	height: 15px;
+	border: 1px solid #000000;
+	background: #fff;	
+	top: -20px;
+	cursor: pointer;
+}
+.testimonials-dot-active {
+	background: #000;
+}
+.testimonials-resuls-stikers{
+	background: #f6f6f6;
+	height: 235px;
+	margin-top: 100px;
+}
+.testimonials-resuls {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 1050px;
+	margin: 0 auto;
+	padding-top: 60px;
+}
+
+.testimonials-result-item {
+	text-align: center;
+	width: 200px;
+	font-family: 'Asap', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #363636;
+	text-transform: uppercase;
+}
+.testimonials-result-item img {
+	height: 80px;
+}
+
+.testimonials-result-item-amount {	
+	font-family: 'Asap', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	color: #363636;
+	text-transform: uppercase;
+}
+
+.free {
+	height: 130px;
+}
+
+.say-hallo {
+	background: url(../img/contactbg.jpg)no-repeat top center / cover;
+	height: auto;
+}
+.say-hallo-text {
+	padding-top: 110px;
+}
+.say-hallo-hr {
+	background: #c1c1c1;
+}
+.say-hallo-h2 {
+	text-align: center;
+	color: #f0f0f0;
+}
+.say-hallo-form {
+	width: 770px;
+	margin: 0 auto;
+	margin-top: 40px;
+	text-align: center;
+	position: relative;
+	height: 330px;
+}
+.say-hallo-name-email {
+	text-align: center;
+	justify-content: space-between;
+	display: block;
+}
+.say-hallo-name {
+	width: 300px;
+	height: 40px;
+	border-radius: 0;
+	outline: none;
+	border:none;
+	margin-right: 20px;
+	padding: 20px 10px;
+}
+.say-hallo-email {
+	width: 300px;
+	height: 40px;
+	border-radius: 0;
+	outline: none;
+	border:none;
+	padding: 20px 10px;
+}
+.say-hallo-message::placeholder {
+	font-family: 'Asap', sans-serif;
+	font-weight: 400;
+	color: #4d4d4d;
+	font-size: 13px;
+	letter-spacing: 0.048em;
+}
+.say-hallo-email::placeholder {
+	font-family: 'Asap', sans-serif;
+	font-weight: 400;
+	color: #4d4d4d;
+	font-size: 13px;
+	letter-spacing: 0.048em;
+}
+.say-hallo-name::placeholder {
+	font-family: 'Asap', sans-serif;
+	font-weight: 400;
+	color: #4d4d4d;
+	font-size: 12px;
+	letter-spacing: 0.048em;
+}
+.say-hallo-message {
+	width: 604px;
+	height: 150px;
+	border-radius: 0;
+	outline: none;
+	border:none;
+	padding: 20px 10px;
+	margin-top: 30px;
+}
+.say-hallo-btn {
+	width: 120px;
+	height: 40px;
+	position: absolute;
+	bottom: 0;
+	left: 330px;
+	background: #fff;
+	border:none;
+	outline: none;
+	align-items: center;
+	font-family: 'Asap', sans-serif;
+	font-weight: 500;
+	color: #4d4d4d;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 0.0001em;
+}
+.say-hallo-second-hr {
+	margin-top: 50px;
+}
+.say-hallo-social {
+	display: flex;
+	align-items: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.say-hallo-social-img {
+	margin-right: 5px;
+}
+.footer {
+	font-family: 'Montserrat' sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #fff;
+	letter-spacing: 0.03em;
+	margin-left: 285px;
+}
